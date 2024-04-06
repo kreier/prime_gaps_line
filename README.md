@@ -109,6 +109,10 @@ plt.show()
 
 ## Most common gap size - the jumping champion
 
+For one million the most common gap size is 6. And it has been since around 500. But until then the champion is jumping between 1, 2, 4 and 6 several times. I have to write a program to visualize it, and it will look like here:
+
+https://mathworld.wolfram.com/JumpingChampion.html
+
 https://math.berkeley.edu/~molsson/Goldston.pdf Graph on page 67 for the champions 2, 4 and 6
 
 And on slide 92 a champion distribution for 2310.
