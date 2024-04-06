@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import math, time, cpuinfo
 import random
 
-last  = 100000000      # 4294967295 is the limit for unsigned 32bit, 2147483647
+last  = 4294967295     # 4294967295 is the limit for unsigned 32bit
 found = 4              # we start from 11, know 2, 3, 5, 7
 primes = [3, 5, 7]     # exclude 2 since we only test odd numbers
-frequency = [0] * 1000 # should be fine for 100 or gaps of 2000
+frequency = [0] * 8000 # should be fine for 100 or gaps of 2000
 
 def is_prime(number):
     flag_prime = 1
