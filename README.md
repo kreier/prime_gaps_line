@@ -106,3 +106,38 @@ plt.show()
 ## Compare graph to 1 million and 100 million
 
 <img src="docs/graph_1million.png" width="49%"> <img src="docs/graph_100million.png" width="49%">
+
+## Most common gap size - the jumping champion
+
+https://math.berkeley.edu/~molsson/Goldston.pdf Graph on page 67 for the champions 2, 4 and 6
+
+And on slide 92 a champion distribution for 2310.
+
+https://t5k.org/glossary/page.php?sort=JumpingChampion
+
+
+## My old finding - not correct, just kept it here for documentation
+
+Until 367 the most common gapsize is 2, having appeared 20 times. With 373 and 379 the gapsize 6 appeared 21 times and is taking over the lead until $1.74 \times 10^{35}$ 
+
+![gapsize 2 distribution](docs/gapsize_2.png)
+
+The most common distance changes with larger prime numbers:
+
+- 2 until 373 (20x), with 379 it is 6
+- 6 until $1.74 \times 10^{35}$ 
+- 30 until $10^{425}$
+- 210 much later, and is then taking over by 
+- 2310 
+
+Which follows the pattern or sequence:
+
+With the sequence
+- $p_1 = 2 = 2$
+- $p_2 = 6 = 2 \times 3$
+- $p_3 = 30 = 2 \times 3 \times 5$
+- $p_4 = 210 = 2 \times 3 \times 5 \times 7$
+- $p_5 = 2310 = 2 \times 3 \times 5 \times 7 \times 11$
+
+https://arxiv.org/abs/1408.4505 Kevin Ford, Ben Green, Sergei Konyagin, Terence Tao (20 Aug 2014)
+https://arxiv.org/abs/1408.5110 James Maynard (1 day later on 21 Aug 2014)
