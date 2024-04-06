@@ -102,3 +102,7 @@ plt.scatter(gapsize, frequency)
 plt.yscale('log')
 plt.show()
 ```
+
+## Compare graph to 1 million and 100 million
+
+<img src="docs/graph_1million.png" width="49%"> <img src="docs/graph_100million.png" width="49%">

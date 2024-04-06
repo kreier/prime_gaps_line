@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import math, time, cpuinfo
 import random
 
-last  = 1000000     # 4294967295 is the limit for unsigned 32bit, 2147483647
+last  = 100000000      # 4294967295 is the limit for unsigned 32bit, 2147483647
 found = 4              # we start from 11, know 2, 3, 5, 7
 primes = [3, 5, 7]     # exclude 2 since we only test odd numbers
-frequency = [0] * 100  # should be fine for 100 or gaps of 200
+frequency = [0] * 1000 # should be fine for 100 or gaps of 2000
 
 def is_prime(number):
     flag_prime = 1
@@ -60,19 +60,19 @@ for number in range(9, last, 2):
     frequency[location] += 1
     found += 1
     last_prime = number
-#     if (time.perf_counter_ns() - dot) > 2000000000:
-#         print(".", end="")
-#         dot = time.perf_counter_ns()
-#         column += 1
-#         if column > 30:
-#             t = elapsed_time((time.perf_counter_ns() - start)/1000000000)
-#             print(f" {t} - {number} {int(number*100/last)}% ")
-#             column = 1
-# if column > 0:
-#     print(" ")
+    if (time.perf_counter_ns() - dot) > 2000000000:
+        print(".", end="")
+        dot = time.perf_counter_ns()
+        column += 1
+        if column > 30:
+            t = elapsed_time((time.perf_counter_ns() - start)/1000000000)
+            print(f" {t} - {number} {int(number*100/last)}% ")
+            column = 1
+if column > 0:
+    print(" ")
 duration = (time.perf_counter_ns() - start)/1000000000
 print(f"This took: {duration:.9f} seconds. {elapsed_time(duration)}")
-print(f"I found {found} prime numbers. Should be 78498.")
+print(f"I found {found} prime numbers.")
 
 for i in range(len(frequency) - 1, 1, -1):
   if frequency[i] > 0:
