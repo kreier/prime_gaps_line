@@ -107,6 +107,12 @@ plt.show()
 
 <img src="docs/graph_1million.png" width="49%"> <img src="docs/graph_100million.png" width="49%">
 
+## And further to 4 billion - 2E32, the largest 32bit integer
+
+It took my i3-10100 some 20 hours to finish the calculation in python.
+
+<img src="docs/2E32_lin.png" width="49%"> <img src="docs/2E32_log.png" width="49%">
+
 ## Most common gap size - the jumping champion
 
 For one million the most common gap size is 6. And it has been since around 500. But until then the champion is jumping between 1, 2, 4 and 6 several times. I have to write a program to visualize it, and it will look like here:
